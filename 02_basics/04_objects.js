@@ -7,7 +7,7 @@ tinderUser.id = "123abc";
 tinderUser.name = "arin";
 tinderUser.isLoggedIn = false;
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
 const regularUser = {
     email: "some@gmail.com",
@@ -19,10 +19,23 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname?.userFullname.firstname); //undefined. because the function does not return anything
+// console.log(regularUser.fullname?.userFullname.firstname); //undefined. because the function does not return anything
 
 const obj1 = {1: "a", 2: "b"};
 const obj2 = {3: "c", 4: "d"};
 
 const obj3 = {...obj1, ...obj2}; //merging two objects using spread operator
-console.log(obj3); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+// console.log(obj3); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+
+//destructuring objects
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "arin joy"
+}
+
+//course.courseInstructor  //this is a way to access the property of an object
+
+const {courseInstructor} = course; //destructuring
+console.log(courseInstructor); //arin joy
