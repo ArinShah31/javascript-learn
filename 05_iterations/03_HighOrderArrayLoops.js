@@ -27,3 +27,14 @@ for (const [key, value] of map){
 }
 
 //objects cannot be directly iterated using for of loop
+
+/*const myObject = {
+    game1 = 'NFS',
+    game2 = 'FIFA',
+}
+
+for (const [key,value] of myObject){
+    console.log(key, ":", value);
+}*/ //will give error
+
+
